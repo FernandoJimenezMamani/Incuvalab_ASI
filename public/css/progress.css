@@ -1,0 +1,156 @@
+.step-progress {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.step-progress ul {
+    display: flex;
+    margin-top: 80px;
+
+}
+
+.step-progress ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-progress ul li .text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4732;
+}
+
+.step-progress .progress-box {
+    margin: 10px;
+
+}
+
+/* Progress Div Css  */
+
+.step-progress ul li .progress {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background-color: rgba(145, 138, 138, 1);
+    margin: 1px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.step-progress .progress::after {
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: #444;
+    right: 30px;
+    z-index: -1;
+}
+
+.step-progress .one::after {
+    width: 0;
+    height: 0;
+}
+
+.step-progress ul li .progress .uil {
+    display: none;
+}
+
+.step-progress ul li .progress p {
+    font-size: 13px;
+}
+
+/* Active Css  */
+
+.step-progress ul li .active {
+    background-color: #43ff32;
+    display: grid;
+    place-items: center;
+}
+
+.step-progress li .active::after {
+    background-color: #43ff32;
+}
+
+.step-progress ul li .active p {
+    display: none;
+}
+
+.step-progress ul li .active .uil {
+    font-size: 20px;
+    display: flex;
+}
+
+/* Revision Css */
+
+.step-progress ul li .review {
+    background-color: #eaff32;
+    display: grid;
+    place-items: center;
+}
+
+.step-progress li .review::after {
+    background-color: #eaff32;
+}
+
+.step-progress ul li .review p {
+    display: none;
+}
+
+.step-progress ul li .review .uil {
+    font-size: 20px;
+    display: flex;
+}
+
+/* Redo Css */
+
+.step-progress ul li .redo {
+    background-color: #ff4732;
+    display: grid;
+    place-items: center;
+}
+
+.step-progress li .redo::after {
+    background-color: #ff4732;
+}
+
+.step-progress ul li .redo p {
+    display: none;
+}
+
+.step-progress ul li .redo .uil {
+    font-size: 20px;
+    display: flex;
+}
+
+.progress-div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 5vh;
+}
+.form-page div .active{
+    background-color: #43ff32;
+
+}
+.form-page div .review{
+    background-color: #eaff32;
+
+}
+.form-page div .redo{
+    background-color: #ff4732;
+
+}
